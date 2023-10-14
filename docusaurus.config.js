@@ -74,7 +74,22 @@ const config = {
           {
             to: '/',
             position: 'left',
-            label: 'About',
+            label: 'Home',
+          },
+          {
+            to: 'Basic/aoa',
+            position: 'left',
+            label: '定款',
+          },
+          {
+            to: 'Basic/governing_documents_management',
+            position: 'left',
+            label: '規程管理規程',
+          },
+          {
+            to: 'Others/develop_regulations_web_site',
+            position: 'left',
+            label: '更新ガイドライン',
           },
           // { to: '/blog', label: 'Blog', position: 'left' },
           {
@@ -91,7 +106,7 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'About',
+                label: 'Home',
                 to: '/',
               },
             ],
