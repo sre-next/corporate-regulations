@@ -129,7 +129,7 @@ const config = {
             items: [
               {
                 label: 'Corporate Site',
-                to: 'https://sre-next.org',
+                href: 'https://sre-next.org',
               },
               {
                 label: 'GitHub',
