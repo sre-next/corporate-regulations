@@ -49,7 +49,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/sre-next/corporate-regulations',
+            'https://github.com/sre-next/corporate-regulations/edit/main',
         },
         blog: false,
         theme: {
@@ -109,6 +109,18 @@ const config = {
                 label: 'Home',
                 to: '/',
               },
+              {
+                label: '定款',
+                to: 'Basic/aoa',
+              },
+              {
+                label: '規程管理規程',
+                to: 'Basic/governing_documents_management',
+              },
+              {
+                label: '更新ガイドライン',
+                to: 'Others/develop_regulations_web_site',
+              },
             ],
           },
           {
@@ -129,7 +141,7 @@ const config = {
             items: [
               {
                 label: 'Corporate Site',
-                to: 'https://sre-next.org',
+                href: 'https://sre-next.org',
               },
               {
                 label: 'GitHub',
