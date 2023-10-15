@@ -31,6 +31,6 @@ slug: /
 
 ## Contribution
 
-本サイトおよび、本サイトに掲載しているドキュメント類について、SRE NEXTのボランティアスタッフをはじめとして、どなたでも改廃の提案が可能です。
+本サイトおよび、本サイトに掲載しているドキュメント類について、SRE NEXT のボランティアスタッフをはじめとして、どなたでも改廃の提案が可能です。
 
 [規程・ガイドライン集の更新ガイドライン](99-Others/develop_regulations_web_site.md)を参考にプルリクエストを作成するか、もしくはリポジトリの[Discussions](https://github.com/sre-next/corporate-regulations/discussions)から提案してください。
