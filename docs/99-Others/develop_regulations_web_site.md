@@ -12,7 +12,7 @@ sidebar_position: 2
 
 ## サイト更新の大まかな流れ
 
-[GitHub Flow](https://docs.github.com/ja/get-started/quickstart/github-flow)に準拠して開発を行います。
+[GitHub Flow](https://docs.github.com/ja/get-started/quickstart/github-flow)に準拠して開発します。
 
 main ブランチが[公開サイト](https://regulations.sre-next.org)と同期されるため、原則として main ブランチからブランチを切ってローカル開発し、main ブランチに対してプルリクエストを出してください。
 
