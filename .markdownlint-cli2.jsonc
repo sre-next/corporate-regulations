@@ -1,0 +1,20 @@
+{
+  "config": {
+    "ul-style": {
+      "style": "dash"
+    },
+    "hr-style": {
+      "style": "---"
+    },
+    "code-block-style": {
+      "style": "fenced"
+    },
+    "code-fence-style": {
+      "style": "backtick"
+    },
+    "line-length": false,
+    "MD024": false,
+    "MD025": false,
+    "no-inline-html": false
+  }
+}
