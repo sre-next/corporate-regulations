@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "format": "markdownlint-cli2 content/ --fix & textlint content/ --fix",
-    "lint": "markdownlint-cli2 content/ && textlint content/",
+    "format": "markdownlint-cli2 docs/ --fix & textlint docs/ --fix",
+    "lint": "markdownlint-cli2 docs/ && textlint docs/",
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
     "build": "docusaurus build",
