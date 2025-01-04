@@ -46,6 +46,21 @@ const config = {
     ],
   ],
 
+  // 検索プラグインを追加
+  themes: [
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      {
+        hashed: true,
+        language: ["ja"],
+        indexDocs: true,
+        indexBlog: false,
+        indexPages: false,
+        docsRouteBasePath: '/'
+      }
+    ]
+  ],
+
   themeConfig:
   /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
   ({
