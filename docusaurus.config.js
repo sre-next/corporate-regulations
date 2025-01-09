@@ -1,8 +1,5 @@
 // @ts-check
-// Note: type annotations allow type checking and IDEs autocompletion
-
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const { themes } = require('prism-react-renderer');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -10,23 +7,15 @@ const config = {
   tagline: 'srenext',
   favicon: 'img/favicon.svg',
 
-  // Set the production url of your site here
   url: 'https://regulations.sre-next.org',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'sre-next', // Usually your GitHub org/user name.
-  projectName: 'corporate-regulations', // Usually your repo name.
+  organizationName: 'sre-next',
+  projectName: 'corporate-regulations',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internalization, you can use this field to set useful
-  // metadata like html lang. For example, if your site is Chinese, you may want
-  // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'ja',
     locales: ['ja'],
@@ -46,10 +35,8 @@ const config = {
         docs: {
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/sre-next/corporate-regulations/edit/main',
+              'https://github.com/sre-next/corporate-regulations/edit/main',
         },
         blog: false,
         theme: {
@@ -60,103 +47,101 @@ const config = {
   ],
 
   themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
-      // Replace with your project's social card
-      image: 'img/social-card.jpg',
-      navbar: {
-        title: '一般社団法人SRE NEXT 規程・ガイドライン集',
-        logo: {
-          alt: 'SRE NEXT Logo',
-          src: 'img/srenext_white.svg',
+  /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+  ({
+    image: 'img/social-card.jpg',
+    navbar: {
+      title: '一般社団法人SRE NEXT 規程・ガイドライン集',
+      logo: {
+        alt: 'SRE NEXT Logo',
+        src: 'img/srenext_white.svg',
+      },
+      items: [
+        {
+          to: '/',
+          position: 'left',
+          label: 'Home',
         },
-        items: [
-          {
-            to: '/',
-            position: 'left',
-            label: 'Home',
-          },
-          {
-            to: 'Basic/aoa',
-            position: 'left',
-            label: '定款',
-          },
-          {
-            to: 'Basic/governing_documents_management',
-            position: 'left',
-            label: '規程管理規程',
-          },
-          {
-            to: 'Others/develop_regulations_web_site',
-            position: 'left',
-            label: '更新ガイドライン',
-          },
-          // { to: '/blog', label: 'Blog', position: 'left' },
-          {
-            href: 'https://github.com/sre-next/corporate-regulations',
-            label: 'GitHub',
-            position: 'right',
-          },
-        ],
-      },
-      footer: {
-        style: 'dark',
-        links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Home',
-                to: '/',
-              },
-              {
-                label: '定款',
-                to: 'Basic/aoa',
-              },
-              {
-                label: '規程管理規程',
-                to: 'Basic/governing_documents_management',
-              },
-              {
-                label: '更新ガイドライン',
-                to: 'Others/develop_regulations_web_site',
-              },
-            ],
-          },
-          {
-            title: 'Event',
-            items: [
-              {
-                label: 'SRE NEXT',
-                href: 'https://sre-next.dev',
-              },
-              {
-                label: 'SRE Lounge',
-                href: 'https://sre-lounge.connpass.com',
-              }
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Corporate Site',
-                href: 'https://sre-next.org',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/sre-next/corporate-regulations',
-              },
-            ],
-          },
-        ],
-        copyright: `CC0 1.0 Universal | SRE NEXT Assoc. | Built with Docusaurus.`,
-      },
-      prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
-      },
-    }),
+        {
+          to: 'Basic/aoa',
+          position: 'left',
+          label: '定款',
+        },
+        {
+          to: 'Basic/governing_documents_management',
+          position: 'left',
+          label: '規程管理規程',
+        },
+        {
+          to: 'Others/develop_regulations_web_site',
+          position: 'left',
+          label: '更新ガイドライン',
+        },
+        {
+          href: 'https://github.com/sre-next/corporate-regulations',
+          label: 'GitHub',
+          position: 'right',
+        },
+      ],
+    },
+    footer: {
+      style: 'dark',
+      links: [
+        {
+          title: 'Docs',
+          items: [
+            {
+              label: 'Home',
+              to: '/',
+            },
+            {
+              label: '定款',
+              to: 'Basic/aoa',
+            },
+            {
+              label: '規程管理規程',
+              to: 'Basic/governing_documents_management',
+            },
+            {
+              label: '更新ガイドライン',
+              to: 'Others/develop_regulations_web_site',
+            },
+          ],
+        },
+        {
+          title: 'Event',
+          items: [
+            {
+              label: 'SRE NEXT',
+              href: 'https://sre-next.dev',
+            },
+            {
+              label: 'SRE Lounge',
+              href: 'https://sre-lounge.connpass.com',
+            }
+          ],
+        },
+        {
+          title: 'More',
+          items: [
+            {
+              label: 'Corporate Site',
+              href: 'https://sre-next.org',
+            },
+            {
+              label: 'GitHub',
+              href: 'https://github.com/sre-next/corporate-regulations',
+            },
+          ],
+        },
+      ],
+      copyright: `CC0 1.0 Universal | SRE NEXT Assoc. | Built with Docusaurus.`,
+    },
+    prism: {
+      theme: themes.github,
+      darkTheme: themes.dracula,
+    },
+  }),
 };
 
 module.exports = config;
